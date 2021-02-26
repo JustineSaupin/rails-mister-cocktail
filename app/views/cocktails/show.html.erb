@@ -4,7 +4,7 @@
 <div>
   <% @cocktail.doses.each do |dose|%>
     <p><%= dose.description %> <%= dose.ingredient.name %></p>
-    <p class="btn btn-light"> <%= link_to "supprimer la dose",
+    <p class="btn btn-dark"> <%= link_to "supprimer la dose",
               dose_path(dose),
               method: :delete %></p>
   <% end %>
